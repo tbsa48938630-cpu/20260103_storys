@@ -69,11 +69,11 @@ const App: React.FC = () => {
   }, [storySegments]);
 
   return (
-    <div className="min-h-screen pb-20 bg-[#FFFBEB]">
+    <div className="min-h-screen pb-20 bg-[#FFF5F5]">
       <Header />
       
       <main className="max-w-3xl mx-auto px-4 mt-8">
-        <div className="bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-orange-200">
+        <div className="bg-white rounded-3xl shadow-xl overflow-hidden border-4 border-red-100">
           <div className="p-6 md:p-8">
             {!isFinished ? (
               <>
@@ -94,7 +94,7 @@ const App: React.FC = () => {
                 {isStoryStarted && !loading && (
                   <button
                     onClick={handleFinish}
-                    className="w-full mt-4 py-3 rounded-xl border-2 border-dashed border-orange-300 text-orange-500 font-bold hover:bg-orange-50 transition-colors flex items-center justify-center gap-2"
+                    className="w-full mt-4 py-3 rounded-xl border-2 border-dashed border-red-300 text-red-500 font-bold hover:bg-red-50 transition-colors flex items-center justify-center gap-2"
                   >
                     <i className="fas fa-flag-checkered"></i>
                     <span>我想看【大結局】了！</span>
@@ -109,7 +109,7 @@ const App: React.FC = () => {
                 <h2 className="text-2xl font-bold text-gray-800 mb-2">這真是一個偉大的故事！</h2>
                 <button 
                   onClick={handleReset}
-                  className="bg-orange-500 text-white px-8 py-3 rounded-full font-bold hover:bg-orange-600 transition-all shadow-lg"
+                  className="bg-red-600 text-white px-8 py-3 rounded-full font-bold hover:bg-red-700 transition-all shadow-lg"
                 >
                   開始新的大冒險
                 </button>
